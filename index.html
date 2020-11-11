@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Sacramento&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+        <div class="text-center" id="head" >
+            <h1 style="    margin-bottom: 0px;">Survey form</h1>
+            <p style="margin-top: 0;">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class=container> 
+        <form>
+            <div class="form">
+                <label for="name"> Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            
+
+            <div class="form">
+                <label for="date">DOB</label>
+                <input type="date" class="form-control" name="date" id="date" required>
+            </div>
+            <div class="form">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email id" required />
+            </div>
+            <div class="form">
+                <label for="phone">Phone Number</label>
+                <input class="form-control" type="tel" name="phone" id="phone" placeholder="Mobile number" />
+                <div class="form">
+                    <label for="gender">Gender</label>
+                    <label>
+                        <input type="radio" name="gender" id="gender"  value="Male" required>Male</label>
+                    <label>
+                        <input type="radio" name="gender" id="gender"  value="Female" required>Female</label>
+                    <label>
+                        <input type="radio" name="gender" id="gender"  value="other" required>Other</label>
+    
+                </div>
+            </div>
+            <div class="form">
+                <p class="para">Where are you from?</p>
+                <select class="form-control" name="place" id="place" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="Hyd">Hyderabad</option>
+                    <option value="banglore">Banglore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="bombay">Bombay</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form">
+                <p class="para" style="margin-right: 0px;
+                margin-left: 20px;">what needs an improvement?</p>
+                <label>
+                    <input type="checkbox" name="ambience" id="ambience" required>Ambience</label>
+                <label>
+                    <input type="checkbox" name="Services" id="Services" required>Services</label>
+                <label>
+                    <input type="checkbox" name="Quantity" id="Quantity" required>Quantity Served</label>
+                <label>
+                    <input type="checkbox" name="Quality" id="Quality" required>Quality of food</label>
+
+            </div>
+            <div class="form">
+                <p class="para" style="margin-right: 0px;
+                margin-left: 22px;">Anything else you wish to say ?</p>
+                <textarea name="comments" id="comments" cols="60" rows=""
+                    placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div class="form">
+                <button type="submit"  class="submit">submit</button>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
